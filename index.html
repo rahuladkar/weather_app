@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="card">
+        <div id="header">
+            <form action="">
+                <input type="search" id="search" placeholder="Enter the location">
+                <button type="submit"><i class="ri-search-2-line"></i></button>
+        </div>
+        </form>
+
+        <div id="weather">
+            <div id="dets">
+                <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
+                <h1>N/A</h1>&deg;C</h1>
+                <h4>N/A</h4>
+                <h3>N/A</h3>
+            </div>
+            <div id="footer">
+                <div id="left">
+                    <i class="ri-water-percent-fill"></i>
+                    <h3>N/A% <span>Humidity</span></h3>
+                </div>
+                <div id="right">
+                    <i class="ri-windy-line"></i>
+                    <h3>N/A Km/hr <span>Wind Speed</span></h3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
